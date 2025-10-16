@@ -9,7 +9,7 @@ class DB {
         $dsn = 'sqlite:'.$dbPath;
         $this->pdo = new PDO($dsn);
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        // initialize tables if not exist done in seed.php typically
+        //  tables are in seed.php 
     }
     public function getPDO(){ return $this->pdo; }
 }
